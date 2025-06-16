@@ -5,8 +5,16 @@ import attack.SwordAttack;
 
 public class Swordsman extends Adventurer {
 
-    Swordsman() {
+    public Swordsman() {
     sayCatchphrase = new SaySwordsmanCatchphrase();
     attack = new SwordAttack();
+    }
+
+    public void sayCatchphrase () {
+        sayCatchphrase.sayCatchphrase();
+    }
+
+    public void attack() {
+        attack.attackBehaviour();
     }
 };

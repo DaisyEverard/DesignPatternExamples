@@ -1,10 +1,9 @@
 
 import adventurers.Wizard;
 import adventurers.Swordsman;
-
-class Program
+class RunAdventure
 {
-    static void Main(string[] args)
+    public static void main(String[] args)
     {
         Wizard balthazarTheGreat = new Wizard();
         Swordsman jeff = new Swordsman();
@@ -14,5 +13,7 @@ class Program
 
         jeff.attack();
         balthazarTheGreat.attack();
+        jeff.attack();
+        jeff.attack();
     }
 }

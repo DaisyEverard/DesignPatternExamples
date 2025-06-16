@@ -8,5 +8,13 @@ public class Wizard extends Adventurer {
         sayCatchphrase = new SayWizardCatchphrase();
         attack = new MagicAttack();
     }
-    
+
+    public void sayCatchphrase () {
+        sayCatchphrase.sayCatchphrase();
+    }
+
+    public void attack() {
+        attack.attackBehaviour();
+    }
+     
 }
