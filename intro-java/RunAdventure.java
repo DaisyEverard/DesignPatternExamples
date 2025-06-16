@@ -13,6 +13,7 @@ class RunAdventure
 
         jeff.attack();
         balthazarTheGreat.attack();
+        System.out.println("print");
         jeff.attack();
         jeff.attack();
     }
