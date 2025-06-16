@@ -1,4 +1,7 @@
 
+import adventurers.Wizard;
+import adventurers.Swordsman;
+
 class Program
 {
     static void Main(string[] args)
