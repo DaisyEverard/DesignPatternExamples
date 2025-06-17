@@ -16,5 +16,8 @@ class RunAdventure
         System.out.println("print");
         jeff.attack();
         jeff.attack();
+        balthazarTheGreat.scream();
+
+        System.out.println("End of main method");
     }
 }

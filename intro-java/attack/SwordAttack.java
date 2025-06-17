@@ -5,10 +5,12 @@ public class SwordAttack implements AttackBehaviour {
     private int loadTime = 2; // in seconds
 
     public void attackBehaviour() {
+        System.out.println("Starting async sword attack...");
+
         Thread newThread = new Thread(() -> {
             try {
-                    Thread.sleep(10 * loadTime);
-                    System.out.println(String.format("%s Magic damage dealt!", damage));
+                    Thread.sleep(1000 * loadTime);
+                    System.out.println(String.format("%s slashing damage dealt!", damage));
                 } catch (InterruptedException e) {
                     System.out.println("Attack was interrupted!");
                 }
