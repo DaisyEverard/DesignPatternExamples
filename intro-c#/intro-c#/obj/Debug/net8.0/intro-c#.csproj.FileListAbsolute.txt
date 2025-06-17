@@ -1,0 +1,15 @@
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\bin\Debug\net8.0\intro-c#.exe
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\bin\Debug\net8.0\intro-c#.deps.json
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\bin\Debug\net8.0\intro-c#.runtimeconfig.json
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\bin\Debug\net8.0\intro-c#.dll
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\bin\Debug\net8.0\intro-c#.pdb
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.AssemblyInfoInputs.cache
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.AssemblyInfo.cs
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.csproj.CoreCompileInputs.cache
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.sourcelink.json
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.dll
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\refint\intro-c#.dll
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.pdb
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\intro-c#.genruntimeconfig.cache
+C:\Users\Daisy.Everard\Documents\personal-projects\DesignPatternExamples\intro-c#\intro-c#\obj\Debug\net8.0\ref\intro-c#.dll

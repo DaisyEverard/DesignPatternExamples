@@ -1,4 +1,3 @@
-package adventurers;
 
 public class Wizard : Adventurer {
     public Wizard() {

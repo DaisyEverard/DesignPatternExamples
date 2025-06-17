@@ -1,9 +1,10 @@
-package adventurers;
 
 public class Swordsman : Adventurer {
 
-    Swordsman() {
+    public Swordsman() {
     sayCatchphrase = new SaySwordsmanCatchphrase();
     attack = new SwordAttack();
     }
+
+
 };
