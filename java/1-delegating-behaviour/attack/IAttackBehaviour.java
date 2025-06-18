@@ -1,5 +1,5 @@
 package attack;
 
-public interface AttackBehaviour {
+public interface IAttackBehaviour {
     public void attackBehaviour();
 }

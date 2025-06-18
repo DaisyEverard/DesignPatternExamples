@@ -1,5 +1,6 @@
 
 import adventurers.Wizard;
+import attack.MagicAttack;
 import adventurers.Swordsman;
 class RunAdventure
 {
@@ -15,8 +16,9 @@ class RunAdventure
         balthazarTheGreat.attack();
         System.out.println("print");
         jeff.attack();
+
+        jeff.setAttackBehaviour(new MagicAttack());
         jeff.attack();
-        balthazarTheGreat.scream();
 
         System.out.println("End of main method");
     }

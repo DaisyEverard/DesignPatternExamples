@@ -1,5 +1,5 @@
 package catchphrase;
 
-public interface SayCatchphraseBehaviour {
+public interface ICatchphraseBehaviour {
     public void sayCatchphrase();
 }

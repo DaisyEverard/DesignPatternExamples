@@ -1,6 +1,6 @@
 package attack;
 
-public class MagicAttack implements AttackBehaviour {
+public class MagicAttack implements IAttackBehaviour {
     private int damage = 4;
     private int loadTime = 5;
 

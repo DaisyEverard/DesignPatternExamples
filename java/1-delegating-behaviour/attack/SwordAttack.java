@@ -1,6 +1,6 @@
 package attack;
 
-public class SwordAttack implements AttackBehaviour {
+public class SwordAttack implements IAttackBehaviour {
     private int damage = 2;
     private int loadTime = 2; // in seconds
 
