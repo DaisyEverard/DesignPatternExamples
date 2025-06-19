@@ -3,16 +3,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ForecastDisplay implements IObserver, IDisplayElement {
+public class ForecastDisplayPush implements IObserverPush, IDisplayElement {
     private float humidity;
     private float pressure;
-    private WeatherData weatherData;
+    private WeatherDataPush weatherData;
 
     private static final List<String> WEATHERS = Collections.unmodifiableList(
         Arrays.asList("rain", "sunny", "muggy", "cold", "snow", "hail", "drought", "flood", "raining frogs")
     );
 
-    public ForecastDisplay(WeatherData weatherData) {
+    public ForecastDisplayPush(WeatherDataPush weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }

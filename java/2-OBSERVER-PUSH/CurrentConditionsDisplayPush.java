@@ -1,9 +1,9 @@
-public class CurrentConditionsDisplay implements IObserver, IDisplayElement {
+public class CurrentConditionsDisplayPush implements IObserverPush, IDisplayElement {
     private float temperature;
     private float humidity;
-    private WeatherData weatherData;
+    private WeatherDataPush weatherData;
 
-    public CurrentConditionsDisplay(WeatherData weatherData) {
+    public CurrentConditionsDisplayPush(WeatherDataPush weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }

@@ -18,6 +18,6 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 
 ## Why?
 The observer and subject are loosely coupled meaning
-- subject only knows about the IObserver, not which concrete observer it's using
+- subject only knows about the IObserverPush, not which concrete observer it's using
 - Observers can be added or removed at any time without editing the subject
 - Subject and Objects can be re-used and modified independently of each other

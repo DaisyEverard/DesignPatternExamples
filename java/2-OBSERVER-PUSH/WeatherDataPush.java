@@ -1,26 +1,26 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class WeatherData implements ISubject {
-    private List<IObserver> observers;
+public class WeatherDataPush implements ISubjectPush {
+    private List<IObserverPush> observers;
     private float temperature;
     private float humidity;
     private float pressure;
 
-    public WeatherData() {
-        observers = new ArrayList<IObserver>();
+    public WeatherDataPush() {
+        observers = new ArrayList<IObserverPush>();
     }
 
-    public void registerObserver(IObserver o) {
+    public void registerObserver(IObserverPush o) {
         observers.add(o);
     }
 
-    public void removeObserver(IObserver o) {
+    public void removeObserver(IObserverPush o) {
         observers.remove(o);
     }
 
     public void notifiyObservers() {
-        for (IObserver observer: observers) {
+        for (IObserverPush observer: observers) {
             observer.update(temperature, humidity, pressure);
         }
     };

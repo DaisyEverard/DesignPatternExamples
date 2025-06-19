@@ -1,9 +1,9 @@
 public class WeatherStation {
     public static void main(String[] args) {
-        WeatherData weatherData = new WeatherData();
+        WeatherDataPush weatherData = new WeatherDataPush();
 
-        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
-        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        CurrentConditionsDisplayPush currentDisplay = new CurrentConditionsDisplayPush(weatherData);
+        ForecastDisplayPush forecastDisplay = new ForecastDisplayPush(weatherData);
 
         weatherData.setMeasurements(70, 65, 20.6f);
         weatherData.setMeasurements(50, 60, 22.6f);
