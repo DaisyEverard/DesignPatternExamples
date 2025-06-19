@@ -1,4 +1,4 @@
-
+package pizzas;
 public class VeggiePizza implements Pizza {
     public void prepare() {
         System.out.println("preparing");

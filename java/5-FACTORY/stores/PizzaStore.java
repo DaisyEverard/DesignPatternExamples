@@ -1,5 +1,7 @@
 package stores;
 
+import pizzas.Pizza;
+
 public class PizzaStore {
     SimplePizzaFactory factory;
 
