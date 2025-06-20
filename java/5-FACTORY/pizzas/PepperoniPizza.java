@@ -3,13 +3,13 @@ package pizzas;
 import ingredients.PizzaIngredientFactory;
 
 public class PepperoniPizza extends Pizza {
-     PizzaIngredientFactory ingredientFactory;
+    PizzaIngredientFactory ingredientFactory;
 
     public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
-    }
+    };
 
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();

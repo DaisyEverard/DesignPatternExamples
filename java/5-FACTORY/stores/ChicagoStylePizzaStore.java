@@ -1,9 +1,11 @@
 package stores;
 
-import pizzas.ChicagoCheesePizza;
-import pizzas.ChicagoPepperoniPizza;
+import ingredients.BasicPizzaIngredientFactory;
+import ingredients.PizzaIngredientFactory;
+import pizzas.CheesePizza;
 import pizzas.Pizza;
-import pizzas.ChicagoVeggiePizza;
+import pizzas.VeggiePizza;
+import pizzas.PepperoniPizza;
 
 public class ChicagoStylePizzaStore extends PizzaStore {
 
@@ -11,18 +13,22 @@ public class ChicagoStylePizzaStore extends PizzaStore {
         super(factory);
     }
 
-    public Pizza createPizza(String type) {
+    protected Pizza createPizza(String item) {
         Pizza pizza = null;
-        
-        switch(type) {
+        PizzaIngredientFactory ingredientFactory = new BasicPizzaIngredientFactory();
+
+         switch(item) {
             case "cheese":
-                pizza = new ChicagoCheesePizza();
+                pizza = new CheesePizza(ingredientFactory);
+                pizza.setName("Basic Cheese Pizza");
                 break;
             case "pepperoni":
-                pizza = new ChicagoPepperoniPizza();
+                pizza = new PepperoniPizza(ingredientFactory);
+                pizza.setName("Basic Pepperoni Pizza");
                 break;
             case "veggie":
-                pizza = new ChicagoVeggiePizza();
+                pizza = new VeggiePizza(ingredientFactory);
+                pizza.setName("Basic Veggie Pizza");
                 break;
         }
 

@@ -1,35 +1,42 @@
 package ingredients;
 
+import ingredients.cheese.Cheese;
+import ingredients.cheese.Mozzerella;
+import ingredients.dough.Dough;
+import ingredients.dough.ThinCrust;
+import ingredients.pepperoni.Pepperoni;
+import ingredients.sauce.Marinara;
+import ingredients.sauce.Sauce;
+import ingredients.veggies.Onion;
+import ingredients.veggies.Pepper;
+import ingredients.veggies.Veggie;
+
+
 public class BasicPizzaIngredientFactory implements PizzaIngredientFactory {
 
-    @Override
     public Dough createDough() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createDough'");
+        return new ThinCrust();
     }
 
-    @Override
     public Sauce createSauce() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createSauce'");
+        return new Marinara();
     }
 
-    @Override
     public Cheese createCheese() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createCheese'");
+        return new Mozzerella();
     }
 
-    @Override
-    public Veggies[] createVeggies() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createVeggies'");
+    public Veggie[] createVeggies() {
+        Veggie[] veggieList = new Veggie[] {
+            new Onion(),
+            new Pepper()
+        };
+        return veggieList;
     }
 
     @Override
     public Pepperoni createPepperoni() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createPepperoni'");
+        return new Pepperoni();
     }
     
 }
