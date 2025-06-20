@@ -1,15 +1,19 @@
 package pizzas;
-public class PepperoniPizza implements Pizza {
-    public void prepare() {
-        System.out.println("preparing");
-    };
-    public void bake() {
-        System.out.println("baking");
-    };
-    public void cut() {
-        System.out.println("cutting");
-    };
-    public void box() {
-        System.out.println("boxing");
-    };
+
+import ingredients.PizzaIngredientFactory;
+
+public class PepperoniPizza extends Pizza {
+     PizzaIngredientFactory ingredientFactory;
+
+    public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+
+    void prepare() {
+        System.out.println("Preparing " + name);
+        dough = ingredientFactory.createDough();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        pepperoni = ingredientFactory.createPepperoni();
+    }
 }

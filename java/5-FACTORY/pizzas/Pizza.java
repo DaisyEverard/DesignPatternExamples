@@ -1,8 +1,31 @@
 package pizzas;
 
-public interface Pizza {
-    public void prepare();
-    public void bake();
-    public void cut();
-    public void box();
+import java.util.ArrayList;
+import java.util.List;
+
+import ingredients.dough.Dough;
+
+public abstract class Pizza {
+    String name;
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies;
+    Cheese cheese;
+    Pepperoni pepperoni;
+
+    abstract void prepare();
+
+    public void bake() {
+        System.out.println("Bake for 25 minutes at 350");
+    };
+    public void cut() {
+        System.out.println("Cutting the pizza into diagonal slices");
+    };
+    public void box() {
+        System.out.println("Place pizza in official PizzaStore box");
+    };
+
+    public String getName() {
+        return name;
+    }
 }

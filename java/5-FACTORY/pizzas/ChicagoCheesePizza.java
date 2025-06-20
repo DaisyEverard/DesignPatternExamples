@@ -2,10 +2,10 @@ package pizzas;
 
 import ingredients.PizzaIngredientFactory;
 
-public class CheesePizza extends Pizza {
+public class ChicagoCheesePizza extends Pizza {
      PizzaIngredientFactory ingredientFactory;
 
-    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+    public ChicagoCheesePizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 

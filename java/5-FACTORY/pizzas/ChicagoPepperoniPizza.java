@@ -2,10 +2,10 @@ package pizzas;
 
 import ingredients.PizzaIngredientFactory;
 
-public class CheesePizza extends Pizza {
+public class ChicagoPepperoniPizza extends Pizza {
      PizzaIngredientFactory ingredientFactory;
 
-    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+    public ChicagoPepperoniPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
@@ -14,5 +14,6 @@ public class CheesePizza extends Pizza {
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();
         cheese = ingredientFactory.createCheese();
+        pepperoni = ingredientFactory.createPepperoni();
     }
 }
